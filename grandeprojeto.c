@@ -44,7 +44,7 @@ int main(){
   }
 }
 
-void regioes(void){
+void regioes(){
     int i=0;
     printf("\nO Brasil possui 26 Estados e o Distrito Federal.");
     printf("\nEm 1969 o Instituto Brasileiro de Geografia e Estatistica, IBGE, ");
@@ -98,7 +98,7 @@ void regioes(void){
     system("pause");
 }
 
-void climas(void){  
+void climas(){  
     // clima relevo e vegetacao
     int i=0;
     printf("\nO Brasil possui uma extensao territorial continental, o que");
@@ -179,7 +179,7 @@ void climas(void){
 }
 
 
-void exercicio (void){
+void exercicio (){
     int resposta[5], acertos;
     acertos = 0;
     //printf("\n ");
