@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 //*689()
+
 int main()
 {
-
-    //menu gcc grandeprojeto.c -o p.exe
+    //gcc grandeprojeto.c -o p.exe
     char nome[30];
     int decisao = 0, i;
     printf("\nDigite seu nome... \n");
@@ -12,7 +12,6 @@ int main()
     gets(nome);
     while (decisao != 5)
     {
-
         printf("\nOii, %s, vamos falar das Regioes do Brasil?\n", nome);
         printf("\n1. As Regioes.\n2. Clima, Relevo e Vegetacao.\n3. Exercicios\n4. Fontes \n5. Sair");
 
@@ -20,14 +19,15 @@ int main()
         scanf("%i", &decisao);      
 
         if (!decisao > 0){
-            printf("\n\nerro!\n\n");
-            system("pause");
-            exit(1);
+            //aqui ele verifica se é um número, depois dá um fflush que limpa o buffer.
+            printf("\n\nerro!\nDigite um numero de 1 ate 5!\n"); 
+            system("pause"); 
+            system("cls");
+            fflush(stdin);
+            
         }
-        if (decisao >= 1 && decisao <= 5)
+        else if (decisao >= 1 && decisao <= 5)
         {
-            printf("compreensivel tenha um bom dia");
-
             system("pause");
             system("cls");
 
@@ -57,11 +57,12 @@ int main()
                 break;
             }
         }else{
-            int decisaoElse = 0;
+            /*int decisaoElse = 0;
             printf("Decisao %i",decisao);
             printf("\nDigite... ");
             scanf("%i", &decisaoElse);
-            system("pause");
+            system("pause");*/
+            printf("\nerro! Digite novamente...\n");
         }
     }
 }
