@@ -9,7 +9,7 @@ int main()
     int decisao = 0, i;
     printf("\nDigite seu nome... \n");
     fflush(stdin);
-    gets(nome);
+    scanf("%[^\n]s",&nome);
     while (decisao != 5)
     {
         printf("\nOii, %s, vamos falar das Regioes do Brasil?\n", nome);
