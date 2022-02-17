@@ -4,9 +4,9 @@
 
 int main()
 {
-    //gcc grandeprojeto.c -o p.exe
     char nome[30];
     int decisao = 0, i;
+    
     printf("\nDigite seu nome... \n");
     fflush(stdin);
     scanf("%[^\n]s",&nome);
@@ -57,11 +57,6 @@ int main()
                 break;
             }
         }else{
-            /*int decisaoElse = 0;
-            printf("Decisao %i",decisao);
-            printf("\nDigite... ");
-            scanf("%i", &decisaoElse);
-            system("pause");*/
             printf("\nerro! Digite novamente...\n");
         }
     }
@@ -205,7 +200,6 @@ void exercicio()
 {
     int resposta[5], acertos;
     acertos = 0;
-    //printf("\n ");
     printf("\nExercicios");
     printf("\n5 Questoes!! ");
     system("pause");
