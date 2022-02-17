@@ -6,6 +6,7 @@ int main()
 {
     char nome[30];
     int decisao = 0, i;
+    
     printf("\nDigite seu nome... \n");
     fflush(stdin);
     scanf("%[^\n]s",&nome);
